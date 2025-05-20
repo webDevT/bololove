@@ -7,11 +7,21 @@
 	<title>Bololove</title>
 	<meta name="description" content="BoloLove">
 <meta name="keywords" content="BoloLove">
-
+<!-- Preconnect для шрифтов -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Preload для конкретных woff2-файлов -->
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/ibmplexsans/v16/IBMPlexSans-Regular.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/mulish/v12/Mulish-Regular.woff2" crossorigin>
+
+<!-- Основная Google Fonts CSS -->
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+<link rel="preload" href="css/style.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="preload" as="image" href="img/photo1.png" />
+	<link rel="preload" as="image" href="img/photo2.png" />
 </head>
 <body>
 
@@ -20,7 +30,7 @@
 		<div class="container">
 			<div class="logo">
 				<a href="index.html">
-					<img src="img/logo.svg" alt="logo" loading="lazy">
+					<img src="img/logo.svg" alt="logo" width="280" height="50">
 					<div class="logo-text">
 						BoloLove
 					</div>
@@ -38,7 +48,7 @@
 				टेलीग्राम पर सबसे खूबसूरत भारतीय महिलाएं
 				<span>
 					
-					<img src="img/telegram.svg" alt="" loading="lazy" loading="lazy">
+					<img src="img/telegram.svg" alt="" loading="lazy" width="23" height="23">
 				</span>
 			</h1>
 
@@ -48,7 +58,7 @@
 						<div class="name-wrapper">
 							रोहन
 						</div>
-						<img src="img/photo1.png" alt="flag" class="photo1 photo" loading="lazy">
+						<img src="img/photo1.png" alt="flag" class="photo1 photo" width="146" height="146">
 						
 					</div>
 
@@ -56,7 +66,7 @@
 						<div class="name-wrapper">
 							प्रिया
 						</div>
-						<img src="img/photo2.png" alt="photo" class="photo2 photo" loading="lazy">
+						<img src="img/photo2.png" alt="photo" class="photo2 photo"width="160" height="160">
 					</div>
 				</div>
 
@@ -123,23 +133,23 @@
 				<div class="photos-list">
 
 					<div class="photo-l">
-						<img src="img/pl1.png" alt="" >
+						<img src="img/pl1.png" alt="" width="125" height="125">
 					</div>
 					
 					<div class="photo-l">
-						<img src="img/pl2.png" alt="">
+						<img src="img/pl2.png" alt="" width="125" height="125">
 					</div>
 					
 					<div class="photo-l">
-						<img src="img/pl3.png" alt="">
+						<img src="img/pl3.png" alt="" width="125" height="125">
 					</div>
 
 					<div class="photo-l">
-						<img src="img/pl4.png" alt="">
+						<img src="img/pl4.png" alt="" width="125" height="125">
 					</div>
 
 					<div class="photo-l">
-						<img src="img/pl5.png" alt="">
+						<img src="img/pl5.png" alt="" width="125" height="125">
 					</div>
 				
 				</div>
@@ -175,28 +185,28 @@
 					<h3 class="h3">
 						अपने संभावित साथी को रेटिंग दें 👍
 					</h3>
-					<img src="img/img1.png" alt="image" class="item__image" loading="lazy">
+					<img src="img/img1.webp" alt="image" class="item__image" loading="lazy" width="245" height="298">
 				</div>
 
 				<div class="item">
 					<h3 class="h3">
 						कुछ सेकंड में प्रतिक्रिया प्राप्त करें
 					</h3>
-					<img src="img/img2.png" alt="image" class="item__image" loading="lazy">
+					<img src="img/img2.webp" alt="image" class="item__image" loading="lazy" width="245" height="298">
 				</div>
 
 				<div class="item">
 					<h3 class="h3">
 						टेलीग्राम में सुरक्षित चैट 🔐
 					</h3>
-					<img src="img/img3.png" alt="image" class="item__image" loading="lazy">
+					<img src="img/img3.webp" alt="image" class="item__image" loading="lazy" width="245" height="298">
 				</div>
 
 				<div class="item item--lg">
 					<h3 class="h3">
 						अपना आदर्श साथी खोजें जो 100% आपके अनुकूल हो! 1000+ लड़कियाँ फ़्लर्ट करने या गंभीर संबंध बनाने के लिए तैयार हैं! 😍
 					</h3>
-					<img src="img/img4.png" alt="image" class="item__image item__image--lg" loading="lazy">
+					<img src="img/img4.webp" alt="image" class="item__image item__image--lg" loading="lazy" width="294" height="150">
 				</div>
 
 				
@@ -228,7 +238,7 @@
 				<div class="benefits__item">
 
 					<div class="benefits__icon-wrapper">				
-						<img src="img/icon1.svg" alt="icon" loading="lazy">
+						<img src="img/icon1.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						100,000+ आकर्षक महिलाएं चैट के लिए तैयार हैं
@@ -237,7 +247,7 @@
 
 				<div class="benefits__item">
 					<div class="benefits__icon-wrapper">
-						<img src="img/icon2.svg" alt="icon" loading="lazy">
+						<img src="img/icon2.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						केवल सत्यापित प्रोफ़ाइल (18+)
@@ -246,7 +256,7 @@
 
 				<div class="benefits__item">
 					<div class="benefits__icon-wrapper">
-						<img src="img/icon3.svg" alt="icon" loading="lazy">
+						<img src="img/icon3.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						ढेर सारी प्रतिक्रियाएँ और ध्यान
@@ -255,7 +265,7 @@
 
 				<div class="benefits__item">
 					<div class="benefits__icon-wrapper">
-						<img src="img/icon4.svg" alt="icon" loading="lazy">
+						<img src="img/icon4.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						पंजीकरण की आवश्यकता नहीं
@@ -264,7 +274,7 @@
 
 				<div class="benefits__item">
 					<div class="benefits__icon-wrapper">
-						<img src="img/icon5.svg" alt="icon" loading="lazy">
+						<img src="img/icon5.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						100% सुरक्षित
@@ -286,7 +296,7 @@
 
 				<div class="review__item">
 
-					<img src="img/r1.png" alt="" class="review__item-img">
+					<img src="img/r1.png" alt="" class="review__item-img" width="85" height="85">
 
 					
 
@@ -300,7 +310,7 @@
 						</div>						
 					</div>
 
-					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img">
+					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img"  width="117" height="22">
 
 
 
@@ -314,7 +324,7 @@
 
 					
 
-					<img src="img/r2.png" alt="" class="review__item-img">
+					<img src="img/r2.png" alt="" class="review__item-img" width="85" height="85">
 					
 
 					<div class="review__author-wrapper">
@@ -328,7 +338,7 @@
 							
 					</div>
 
-					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img">
+					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img"  width="117" height="22">
 
 					<div class="review__text">
 						मेरी मुलाकात एक ऐसे अद्भुत व्यक्ति से हुई जो मेरी पारिवारिक अपेक्षाओं और मेरी आधुनिक जीवनशैली दोनों को समझता है
@@ -338,7 +348,7 @@
 
 				<div class="review__item">
 
-					<img src="img/r3.png" alt="" class="review__item-img">
+					<img src="img/r3.png" alt="" class="review__item-img" width="85" height="85">
 					
 
 					<div class="review__author-wrapper">
@@ -352,7 +362,7 @@
 							
 					</div>
 
-					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img">
+					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img"  width="117" height="22">
 
 					<div class="review__text">
 						मैंने सोचा नहीं था कि मुझे ऑनलाइन प्यार मिलेगा, लेकिन बोलोलव ने इसे संभव बना दिया - और आनंददायक भी
